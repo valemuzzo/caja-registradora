@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Cash Register Machine</title>
+        <link rel="stylesheet" href="caja_registradora.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Unica+One&Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet" ->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+            />
+    </head>
+    <body style="background-color: #333;">
+        <main role="main" class="d-flex flex-row flex-wrap align-items-center
+            mx-2">
+            <!--container del logo y display-->
+            <div class="container d-flex mt-4 mx-5 p-3">
+                <div class="container-logo d-flex col-6">
+                    <img class="mx-auto" src="img/iso-rc.png" alt="logo-rc">
+                </div>
+                <div class="display col-6 pr-3 py-auto" id="display"></div>
+            </div>
+            <!--box del container general de los botones y ticket-->
+            <div class="container-box d-flex mx-2">
+                <div id="borde-box-l"></div>
+                <div class="box d-flex flex-row">
+                    <!--contenedor del ticket-->
+                    <div class="container-ticket pt-5 col-6">
+                        <div class="ticket mt-4 mx-5 p-3"> - - - - - Rolling (<>)- - -
+                                - -
+                            </br><span style="font-size: 9px">pague la
+                                renta - - - - - - - desc. 50% </span>
+                        </div>
+                        <!--hr style="margin-top: 0;"-->
+                        <div class="salida-ticket"></div>
+                    </div>
+                    <!--div para estirar-->
+                    <div class="ml-auto"></div>
+                    <!--div para los botones de los numeros-->
+                    <div class="keys mt-4 mr-2 col-4">
+                        <button onclick="presionarNumero('7')" class="btn btn3d
+                            btn-default siete">7</button>
+                        <button onclick="presionarNumero('8')" class="btn btn3d
+                            btn-default ocho">8</button>
+                        <button onclick="presionarNumero('9')" class="btn btn3d
+                            btn-default nueve">9</button>
+                        <button onclick="sumar()" class="btn btn3d btn-primary
+                            suma"><span>+</span></button>
+                        <button onclick="presionarNumero('4')" class="btn btn3d
+                            btn-default cuatro">4</button>
+                        <button onclick="presionarNumero('5')" class="btn btn3d
+                            btn-default cinco">5</button>
+                        <button onclick="presionarNumero('6')" class="btn btn3d
+                            btn-default seis"><span>6</span></button>
+                        <button onclick="restar('-')" class="btn btn3d
+                            btn-danger resta"><span>-</span></button>
+                        <button onclick="presionarNumero('1')" class="btn btn3d
+                            btn-default uno">1</button>
+                        <button onclick="presionarNumero('2')" class="btn btn3d
+                            btn-default dos">2</button>
+                        <button onclick="presionarNumero('3')" class="btn btn3d
+                            btn-default tres">3</button>
+                        <button onclick="multiplicar()" class="btn btn3d
+                            btn-warning multiplicacion">x</button>
+                        <button onclick="ac()" class="btn btn3d btn-default
+                            reset">AC</button>
+                        <button onclick="presionarNumero('0')" class="btn btn3d
+                            btn-default cero">0</button>
+                        <button onclick="calcular()" class="btn btn3d
+                            btn-success igual">=</button>
+                        <button onclick="dividir()" class="btn btn3d btn-info division">÷</button>                
+                </div>
+                    <div id="borde-box-r"></div>
+                </div>
+            </div>
+            <!--el cajon de la caja-->
+            <div class="container-box">
+                <div class="big-box-medium"></div>
+                <div class="box mx-4 pb-2"></div>
+                <div class="big-box-bottom"></div>
+            </div>
+        </main>
+        <footer>
+            <div class="cajon"></div>
+            <div class="cajon2 d-flex justify-content-center align-items-center">
+                <div class="reg"></div>
+                <div class="circle">-</div>
+                <div class="reg r2"></div>
+            </div>
+            <div class="cajon3"></div>
+        </footer>
+        <script src="caja_registradora.js"></script>
+    </body>
+</html>

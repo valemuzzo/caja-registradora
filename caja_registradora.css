@@ -1,0 +1,218 @@
+body {
+  background-color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+main {
+  width: 950px;
+  padding-left: 150px;
+}
+.container {
+  border-radius: 10px;
+  background-color: #eeeeee;
+  box-shadow: -1px -1px 2px 0px grey, inset 1px -1px 10px 0px grey;
+}
+.display {
+  background: #000000;
+  background: -webkit-linear-gradient(top, #000000, #00364f);
+  background: -moz-linear-gradient(top, #000000, #00364f);
+  background: linear-gradient(to bottom, #000000, #00364f);
+  font-family: "Unica One", cursive;
+  font-size: 3em;
+  text-align: right;
+  color: #009eea;
+  -webkit-box-shadow: inset -8px -8px 8px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset -8px -8px 8px -6px rgba(0, 0, 0, 1);
+  box-shadow: inset -8px -8px 8px -6px rgba(0, 0, 0, 1);
+}
+.box {
+  width: 750px;
+  background-color: #eeeeee;
+}
+.container-box {
+  z-index: 3;
+}
+#borde-box-r {
+  background-color: #eeeeee;
+  width: 30px;
+  height: 300px;
+  background-image: url("img/borde-cajareg-r.png");
+}
+#borde-box-l {
+  background-color: #eeeeee;
+  width: 30px;
+  height: 300px;
+  background-image: url("img/borde-cajareg-l.png");
+}
+.big-box-medium {
+  width: 800px;
+  border-radius: 20px;
+  height: 30px;
+  z-index: 10;
+  box-shadow: -1px -1px 2px 0px grey, inset 1px -1px 5px 0px grey;
+  background-color: #eee;
+}
+.big-box-bottom {
+  width: 800px;
+  border-radius: 15px;
+  z-index: 10;
+  height: 60px;
+  box-shadow: -1px -1px 2px 0px grey, inset 1px -1px 5px 0px grey;
+  background-color: #eee;
+}
+
+.keys {
+  margin: 0;
+  padding: 0;
+}
+
+.ticket {
+  background-color: #fff;
+  height: 100px;
+  -webkit-box-shadow: -1px -5px 18px -9px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: -1px -5px 18px -9px rgba(0, 0, 0, 0.63);
+  box-shadow: -1px -5px 18px -9px rgba(0, 0, 0, 0.63);
+  z-index: 7;
+}
+
+.salida-ticket {
+  height: 100px;
+
+  -webkit-box-shadow: 0px -40px 9px -39px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px -40px 9px -39px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px -40px 9px -39px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+}
+
+.circle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    110deg,
+    rgba(187, 177, 178, 1) 40%,
+    rgba(163, 154, 155, 1) 44%,
+    rgba(171, 165, 165, 1) 48%,
+    rgba(168, 162, 162, 1) 52%,
+    rgba(198, 194, 193, 1) 55%,
+    rgba(251, 250, 248, 1) 74%,
+    rgba(246, 245, 243, 1) 74%,
+    rgba(207, 206, 204, 1) 74%,
+    rgba(0, 0, 0, 1) 91%,
+    rgba(187, 177, 178, 1) 90%,
+    rgba(187, 177, 178, 1) 93%,
+    rgba(167, 160, 160, 1) 96%
+  );
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 3px 1px white;
+}
+.reg {
+  border-radius: 20px;
+  height: 15px;
+  margin: 15px;
+  width: 180px;
+  background-color: #333;
+  box-shadow: inset 1px 1px 2px 1px black;
+}
+.cajon {
+  width: 950px;
+  height: 90px;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #0c0c0c,
+    #151515,
+    #1b1b1b,
+    #222222
+  );
+  /*position: absolute;
+  top: 315px;
+  left: 255px;*/
+  clip-path: polygon(7% 0, 95% 0%, 100% 100%, 0% 100%);
+  box-shadow: inset 1px 1px 3px 1px rgb(0, 0, 0);
+}
+
+.cajon2 {
+  width: 950px;
+  height: 60px;
+  background-color: #222;
+  /*position: absolute;
+  top: 405px;
+  left: 266px;*/
+  box-shadow: inset 1px 1px 6px 1px #333;
+}
+
+.cajon3 {
+  width: 950px;
+  height: 30px;
+  background-color: #222;
+  margin-bottom: 40px;
+  /*  position: absolute;
+  top: 440px;
+  left: 266px;*/
+  box-shadow: inset 1px 0px 3px 1px #000;
+}
+
+footer {
+  padding-left: 75px;
+  margin-top: -40px;
+}
+
+/*recurso de botones bootstrap: https://bootsnipp.com/snippets/g6y1*/
+.btn3d {
+  width: 2.5em;
+  display: block;
+  font-weight: 600;
+  transition: all 0.08s linear;
+  position: relative;
+  outline: medium none;
+  -moz-outline-style: none;
+  border: 0px;
+  margin-right: 2px;
+  margin-top: 15px;
+}
+.btn3d:focus {
+  outline: medium none;
+  -moz-outline-style: none;
+}
+.btn3d:active {
+  top: 9px;
+}
+.btn-default {
+  box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #adadad, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+.btn-primary {
+  box-shadow: 0 0 0 1px #428bca inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #357ebd, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #428bca;
+}
+.btn-success {
+  box-shadow: 0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #5cb85c;
+}
+.btn-info {
+  box-shadow: 0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #5bc0de;
+}
+.btn-warning {
+  box-shadow: 0 0 0 1px #f0ad4e inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #eea236, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f0ad4e;
+}
+.btn-danger {
+  box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 8px 0 0 #c24032, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+    0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #c63702;
+}
